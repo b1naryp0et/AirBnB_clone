@@ -20,3 +20,4 @@ class FileStorage:
 
         self.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj
 
+    def reload(self):
