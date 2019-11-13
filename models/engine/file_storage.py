@@ -21,3 +21,14 @@ class FileStorage:
         self.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj
 
     def reload(self):
+        """ Desirialization json """
+
+        x = FileStorage.__file_path
+        try:
+            with open(x, "r", encoding="UTF-8") as f:
+                y = json.load(f)
+                for w, z in (y.items()):
+                    z = eval(z["__class__"])(**z)
+                    FileStorage.__objects[w] = z
+        except FileNotFoundError:
+            pass
