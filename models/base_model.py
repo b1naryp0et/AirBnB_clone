@@ -18,7 +18,7 @@ class BaseModel:
         """ Initiates BaseModel """
 
         if kwargs:
-            self.__dict__ = kwargs
+            self.id = kwargs["id"]
             self.created_at = datetime.strptime(kwargs.get("created_at"),
                                                 dtFrmt)
             self.updated_at = datetime.strptime(kwargs.get("updated_at"),
@@ -33,9 +33,12 @@ class BaseModel:
     def __str__(self):
         """ The string representation of BaseModel """
 
-        return "[{:s}] ({:s}) {}".format(self.__class__.__name__,
-                                         self.id, self.__dict__)
+        return "[{:s}] ({:s}) {}".format(type(self).__name__, self.id,
+                                         self.__dict__)
 
+    def __repr__(self):
+        """ create and return formatted string """
+        return self.__str__()
 
     def save(self):
         """ Date updater """
