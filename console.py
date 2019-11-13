@@ -64,8 +64,10 @@ class HBNBCommand(cmd.Cmd):
         nstance_list = []
         if line == "":
             for key, value in (storage.all()).items():
+                print("key ->", key)
+                print("value ->", value)
                 nstance_list.append(value)
-                print(nstance_list)
+            print(nstance_list)
         elif line in self.HBNBclasses:
             for key, value in (storage.all()).items():
                 if key == "{}.{}".format(line, value.id):
@@ -89,8 +91,6 @@ class HBNBCommand(cmd.Cmd):
         args = shlex.split(argv)
 
         if len(args) == 0:
-            print("** class name missing **")
-        if len(args[0]) == "":
             print("** class name missing **")
         elif args[0] not in self.HBNBclasses:
             print("** class doesn't exist **")
@@ -151,7 +151,6 @@ class HBNBCommand(cmd.Cmd):
         """Exit"""
         print()
         return True
-
 
 if __name__ == '__main__':
     display = HBNBCommand()
