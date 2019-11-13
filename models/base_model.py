@@ -36,6 +36,7 @@ class BaseModel:
         return "[{:s}] ({:s}) {}".format(self.__class__.__name__,
                                          self.id, self.__dict__)
 
+
     def save(self):
         """ Date updater """
 
@@ -50,3 +51,16 @@ class BaseModel:
         a_dict['updated_at'] = self.updated_at.isoformat()
 
         return a_dict
+
+    def reload(self):
+        """ deserializes json from file to dictionary """
+
+        x = FileStorage.__file_path
+        try:
+            with open(x, "r", encoding="UTF-8") as f:
+                y = json.load(f)
+                for w, z in (y.items()):
+                    z = eval(z["__class__"])(**z)
+                    FileStorage.__objects[w] = z
+        except FileNotFoundError:
+            pass
