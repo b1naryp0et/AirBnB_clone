@@ -1,5 +1,21 @@
 # AirBnB_Clone - The Console :house:
-#### AirBnB_CLone is a simplified command interpreter. The console includes many of the most basic features of a "regular" console.
+## Description
+#### AirBnB_CLone is a simplified command interpreter. The console includes many of the most basic features of a "regular" console.This is the very first project of the multiple AirBnB Clone projects we're asked to create at Holberton School, each of which build on each other.
+
+## About Me
+Hi, I'm Faizan, a software engineer with an interest in Data Science. I spent the last year learning how to code through the project based curriculum at Holberton School. Before learning software engineering, I was in management. You can find out more about me here:
+* Faizan Khan 🌌 [b1naryp0et](https://github.com/b1naryp0et) | [@b1nary_p0et](https://twitter.com/b1nary_p0et) | [My LinkedIn](https://www.linkedin.com/in/fkkhan/) | [This Project's Repo](https://github.com/maybe-william/RocketRiders)
+
+## Developing AirBnB_Clone
+This was the first team project at Holberton, which involved python! Jon Patterson, my partner for this project, hadn't worked together yet so we decided it would be fun to work with someone new on a project which was quite involved. Fortunately, we encountered no major issues.
+
+## Implemented and Non-Implemented Features
+Most of the major features we endeavored to implement did end up being present in this project. This includes infusing our command interpreter with common commands such as "create" and "destroy".
+
+Features we didn't implement but may explore in the future are updating certain instance based on their ID with a dictionary and more unit tests.
+
+## Challenges
+We didn't encounter any major challenges when completing this project. The only two that come to mind are some scheduling and pep-8 compliance issues.
 
 ## Synopsis
 
