@@ -1,4 +1,5 @@
 # AirBnB_Clone - The Console :house:
+![air_bnb_screens](https://user-images.githubusercontent.com/51524966/88120343-b0ca5280-cb90-11ea-85e0-2182d266d899.png)
 ## Description
 #### AirBnB_CLone is a simplified command interpreter. The console includes many of the most basic features of a "regular" console.This is the very first project of the multiple AirBnB Clone projects we're asked to create at Holberton School, each of which build on each other.
 
